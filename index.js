@@ -27,5 +27,3 @@ function another() {
 	const random = Math.floor(Math.random() * options.length);
 	prediction.textContent = options[random];
 }
-
-another();
