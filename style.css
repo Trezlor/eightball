@@ -1,44 +1,81 @@
 body {
-	background-color: rgb(153, 116, 116);
-	color: white;
-	text-align: center;
+	/*Box model stuff*/
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(-45deg, #111111, #424242, #111111, #424242);
+	background-size: 400% 400%;
+	/*Typography stuff*/
 	font-family: "Karla";
+	text-align: center;
+	color: white;
+	/*Manipulations stuff*/
+	animation: hoi 25s ease infinite;
+}
+
+@keyframes hoi {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .eightball {
-	margin: 10em auto 0;
-	background-color: black;
+	/*Box model stuff*/
 	width: 400px;
 	height: 400px;
-	line-height: 400px;
+	margin: 5em auto 0;
 	border-radius: 50%;
+	background: linear-gradient(-45deg, black, rgb(21, 21, 21));
+	/*Miscellaneous*/
+	line-height: 400px;
+	box-shadow: 0px 0px 20px 5px white;
 }
 
 p {
-	margin: auto;
+	/*Display stuff*/
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	align-self: center;
+	justify-content: center;
+	/*Box model stuff*/
+	margin: auto;
+	/*Typography stuff*/
+	font-family: "Roboto", sans-serif;
 	font-size: 25px;
-	font-weight: 800;
+	font-weight: 400;
 }
 
 button {
+	/*Box model stuff*/
 	margin-top: 2em;
 	padding: 8px 16px;
-	font-size: 20px;
 	border: none;
 	border-radius: 8px;
 	background-color: rgb(0, 0, 0);
-	color: white;
+	/*Typography stuff*/
+	font-size: 12px;
+	text-shadow: 0px 0px 20px rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
+	/*Miscellaneous*/
+	box-shadow: 0px 0px 5px 0px white;
 }
 
 button:hover {
-	cursor: pointer;
+	/*Box model stuff*/
 	background-color: rgb(20, 20, 20);
+	/*Miscellaneous*/
+	cursor: pointer;
 }
 
 button:active {
+	/*Box model stuff*/
 	background-color: rgb(0, 0, 0);
+}
+
+p {
 }
